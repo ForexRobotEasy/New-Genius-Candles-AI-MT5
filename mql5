@@ -1,0 +1,76 @@
+
+// New Genius Candles AI MT5 - Trading Robot
+// Developer: Forex Robot Easy Team
+// Developer's Site: forexroboteasy.com
+
+// Candlestick Pattern Detection
+bool detectCandlestickPattern()
+{
+    // Implement proprietary algorithm for detecting candlestick patterns
+    // Return true if pattern is detected, false otherwise
+}
+
+// Price Movement Prediction
+double predictPriceMovement()
+{
+    // Utilize Core AI to model future price movements
+    // Return predicted price movement value
+}
+
+// Data Analysis
+void analyzeData()
+{
+    // Implement AI algorithms to analyze historical prices, trading volumes, news events, and technical indicators
+    // Store analysis results for informed decision making
+}
+
+// Informed Decision Making
+bool makeInformedDecision()
+{
+    // Retrieve analyzed data
+    // Make informed decision on buying or selling assets based on the analyzed data
+    // Return true if buying, false if selling
+}
+
+// Trading Strategy Updates
+void updateTradingStrategy()
+{
+    // Update trading strategy every two weeks
+    // Identify the best possible entry points based on updated strategy
+}
+
+// Main function
+void OnTick()
+{
+    // Check for candlestick pattern
+    if (detectCandlestickPattern())
+    {
+        // Predict price movement
+        double predictedMovement = predictPriceMovement();
+        
+        // Analyze data
+        analyzeData();
+        
+        // Make informed decision
+        bool buy = makeInformedDecision();
+        
+        if (buy)
+        {
+            // Buy assets
+            // Place buy order based on predicted movement
+        }
+        else
+        {
+            // Sell assets
+            // Place sell order based on predicted movement
+        }
+    }
+    
+    // Check if it's time to update trading strategy
+    // Every two weeks
+    if (TimeCurrent() - TimeTradeServer() >= 2 * 7 * 24 * 60 * 60)
+    {
+        // Update trading strategy
+        updateTradingStrategy();
+    }
+}
